@@ -1,0 +1,50 @@
+#footer {
+	padding:10px;
+}
+
+.ui-body-g {
+	background-color:#1F655F !important;
+	border-color:#18544e !important;
+}
+.ui-body-g .ui-btn {
+	background: #216861 !important;
+	color: #fff !important;
+	text-shadow: 0 1px 0 #1a1a1a !important;
+	border-color: #0f3f3a !important;
+}
+.ui-body-g .ui-btn:hover {
+	background: #0e3833 !important;
+}
+.ui-body-g .panel-active {
+	background: #0e3833 !important;
+	cursor: default;
+}
+
+.ui-btn-g {
+	background: #216861 !important;
+	color: #fff !important;
+	text-shadow: 0 1px 0 #1a1a1a !important;
+}
+
+.members {
+	background: #216861 !important;
+	color: #fff !important;
+	text-shadow: 0 1px 0 #1a1a1a !important;
+}
+.members:hover {
+	background: #0e3833 !important;
+}
+.apply {
+	background: #FFBB12 !important;
+	color: #fff !important;
+	text-shadow: 0 1px 0 #1a1a1a !important;
+}
+.apply:hover {
+	background: #ce9510 !important;
+}
+
+#tabs .ui-btn-active {
+	background: #216861 !important;
+	color: #fff !important;
+	text-shadow: 0 1px 0 #1a1a1a !important;
+}

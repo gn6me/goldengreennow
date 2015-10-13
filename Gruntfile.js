@@ -29,7 +29,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    "css/template.css": "css/template.css"
+                    "css/template.css": "css/template.css" //needs to grab from the same directory after postcss has run
                 }
             }
         },

@@ -3,6 +3,26 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
+        postcss: {
+            options: {
+                map: true,
+                processors: [
+                    require('lost')
+                ]
+            },
+            dist: {
+                src: 'css/build/template',
+                dest: 'css/template'
+            }
+        },
+
+        autoprefixer: {
+            single_file: {
+                src: 'css/template.css',
+                dest: 'css/template.css'
+            }
+        },
+
         concat: {
                 dist: {
                     src: ['js/libs/*.js'],
@@ -18,17 +38,6 @@ module.exports = function(grunt) {
                 },
         },
 
-        sass: {
-            dist: {
-                options: {
-                    style: 'compressed'
-                },
-                files: {
-                    'css/build/template.css': 'css/template.scss'
-                },
-            },
-        },
-
         watch: {
             scripts: {
                 files: ['js/libs/*.js'],
@@ -37,9 +46,8 @@ module.exports = function(grunt) {
                     spawn: false,
                 },
             },
-            css: {
-                files: ['css/*.scss'],
-                tasks: ['sass'],
+            postcss: {
+                tasks: ['postcss'],
                 options: {
                     spawn: false,
                 },
@@ -47,9 +55,9 @@ module.exports = function(grunt) {
         },
 
     });
-
+    grunt.loadNpmTasks('grunt-postcss');
     require('load-grunt-tasks')(grunt);
 
-    grunt.registerTask('default', ['concat', 'uglify', 'sass', 'watch']);
+    grunt.registerTask('default', ['concat', 'uglify', 'watch', 'postcss', 'autoprefixer', 'cssnext']);
 
 };

@@ -11,8 +11,8 @@ module.exports = function(grunt) {
                 ]
             },
             dist: {
-                src: 'css/build/template',
-                dest: 'css/template'
+                src: 'css/build/template.css',
+                dest: 'css/template.css'
             }
         },
 
@@ -23,18 +23,29 @@ module.exports = function(grunt) {
             }
         },
 
+        cssnext: {
+            options: {
+                sourcemap: true
+            },
+            dist: {
+                files: {
+                    "css/template.css": "css/template.css"
+                }
+            }
+        },
+
         concat: {
                 dist: {
-                    src: ['js/libs/*.js'],
-                    dest: 'js/build/production.js',
+                    src: ['templates/acl-3.0/js/libs/*.js'],
+                    dest: 'templates/acl-3.0/js/build/production.js',
                 },
 
         },
 
         uglify: {
                 build: {
-                    src: 'js/build/production.js',
-                    dest: 'js/production.min.js',
+                    src: 'templates/acl-3.0/js/build/production.js',
+                    dest: 'templates/acl-3.0/js/production.min.js',
                 },
         },
 
@@ -47,10 +58,8 @@ module.exports = function(grunt) {
                 },
             },
             postcss: {
-                tasks: ['postcss'],
-                options: {
-                    spawn: false,
-                },
+                files: ['css/build/template.css'],
+                tasks: ['postcss','cssnext','autoprefixer'],
             },
         },
 
@@ -58,6 +67,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-postcss');
     require('load-grunt-tasks')(grunt);
 
-    grunt.registerTask('default', ['concat', 'uglify', 'watch', 'postcss', 'autoprefixer', 'cssnext']);
+    grunt.registerTask('default', ['concat', 'uglify', 'postcss', 'cssnext', 'watch']);
 
 };

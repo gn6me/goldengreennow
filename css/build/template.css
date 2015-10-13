@@ -7,4 +7,7 @@
 :--heading {
 	color: color( var(--mainColor) blackness(+20%) );
 }
-@media (--mobile) {}
+
+div.col3 {
+	lost-column: 1/3;
+}

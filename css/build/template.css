@@ -1,5 +1,6 @@
 :root {
 	--mainColor: #fff;
+	--mainBorder: color(var(--mainColor) b(+30%));
 	--greenColor: #389D52;
 	--redColor: #e7503c;
 	--redBorder: color(var(--redColor) saturation(+20%) b(50%));;
@@ -8,7 +9,7 @@
 	--fontSize: 1rem;
 	--fontFamily: 'Open Sans', sans-serif;
 }
-@custom-media --mobileReg (width <= 960px);
+@custom-media --mobileReg (width <= 800px);
 @custom-media --mobileSmall (width <= 500px);
 @custom-selector :--heading h1, h2, h3, h4, h5, h6;
 
@@ -60,6 +61,9 @@ div.col3-4 {
 	}
 	div.col2 {
 		lost-column: 1/1;
+	}
+	div.col2-3 {
+		lost-column: 1/1 0;
 	}
 }
 @media (--mobileSmall) {
@@ -134,6 +138,14 @@ nav ul li a {
 nav ul li a:hover {
 	color: color(var(--greenColor) b(65%)) !important;
 }
+.mobile { display: none; }
+.menu,.menu:visited {
+	display: block;
+	color: color(var(--mainColor) b(80%));
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
 
 div.u-header {
 	width: 100%;
@@ -152,6 +164,14 @@ div.fBox {
 	text-align: center;
 	background: url('../images/photobackground.jpg') no-repeat;
 	background-size: 100%;
+}
+@media (--mobileReg) {
+	nav { display: none; }
+	.mobile { display: block; }
+	div.fBox {
+		background: color(var(--greenColor) saturation(+ 60%) w(+ 40%));
+		background-image: none;
+	}
 }
 div.fBox .cAlign {
 	top: 50px;
@@ -211,6 +231,24 @@ div.fBox h4 {
 .btn-yellow:hover {
 	background: color(var(--yellowColor) saturation(+10%) b(+10%));
 	border-bottom-color: color(var(--yellowBorder) saturation(-10%) b(+10%));
+}
+.btn-white {
+	width: 100%;
+	margin: 0 auto;
+	background: var(--mainColor);
+	border-bottom: 3px solid var(--mainBorder);
+}
+.btn-white:hover {
+	background: color(var(--mainColor) b(10%));
+	border-bottom-color: color(var(--mainBorder) b(+30%));
+}
+
+@media (--mobileReg) {
+	.btn { 
+		width: 100%;
+		margin-bottom: 10px; 
+	}
+	.btn-red { margin-right: 0; }
 }
 
 /* TYPOGRAPHY */

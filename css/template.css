@@ -165,7 +165,7 @@ div.col3-4:nth-child(4n + 1) {
 	clear: left;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 800px) {
 	div.col4 {
 		width: calc(99.99% * 1/2 - 15px);
 	}
@@ -232,6 +232,23 @@ div.col3-4:nth-child(4n + 1) {
 		margin-right: 0;
 	}
 	div.col2:nth-child(1n + 1) {
+		clear: left;
+	}
+	div.col2-3 {
+		width: 99.99%;
+	}
+	div.col2-3:nth-child(n) {
+		float: left;
+		margin-right: 30px;
+		clear: none;
+	}
+	div.col2-3:last-child {
+		margin-right: 0;
+	}
+	div.col2-3:nth-child(0n) {
+		margin-right: 0;
+	}
+	div.col2-3:nth-child(0n + 1) {
 		clear: left;
 	}
 }
@@ -337,6 +354,14 @@ nav ul li a {
 nav ul li a:hover {
 	color: rgb(56, 89, 64) !important;
 }
+.mobile { display: none; }
+.menu,.menu:visited {
+	display: block;
+	color: rgb(142, 142, 142);
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
 
 div.u-header {
 	width: 100%;
@@ -356,6 +381,14 @@ div.fBox {
 	text-align: center;
 	background: url('../images/photobackground.jpg') no-repeat;
 	background-size: 100%;
+}
+@media (max-width: 800px) {
+	nav { display: none; }
+	.mobile { display: block; }
+	div.fBox {
+		background: rgb(102, 214, 130);
+		background-image: none;
+	}
 }
 div.fBox .cAlign {
 	top: 50px;
@@ -415,6 +448,24 @@ div.fBox h4 {
 .btn-yellow:hover {
 	background: rgb(230, 185, 5);
 	border-bottom-color: rgb(135, 118, 48);
+}
+.btn-white {
+	width: 100%;
+	margin: 0 auto;
+	background: #fff;
+	border-bottom: 3px solid rgb(196, 196, 196);
+}
+.btn-white:hover {
+	background: rgb(232, 232, 232);
+	border-bottom-color: rgb(151, 151, 151);
+}
+
+@media (max-width: 800px) {
+	.btn { 
+		width: 100%;
+		margin-bottom: 10px; 
+	}
+	.btn-red { margin-right: 0; }
 }
 
 /* TYPOGRAPHY */

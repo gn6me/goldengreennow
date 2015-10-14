@@ -6,7 +6,9 @@
     <meta name="keywords" content="cash advance,cash loans,payday loans,loans,easy loan,quick loan,fast loan,fast cash,extra cash,quick cash,easy approval,no score check,same day approval,quick approval,bad credit">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/template.css" />
+    <link rel="stylesheet" href="css/build/mobile.css">
+    <link rel="stylesheet" href="http://goldengreennow.co/mobile/mobile.css">
+    <link rel="stylesheet" href="css/template.css">
     <script type="text/javascript">
         function bookmark(url, title)
         {
@@ -35,6 +37,21 @@
 </head>
 <body>
     <div class="container">
+        <div data-role="panel" class="ui-body-g" data-display="overlay" data-position="right" id="hpanel">
+            <div class="ui-panel-inner">
+                <ul data-role="listview">
+                    <li><a href="#home" class="ui-btn ui-btn-icon-right ui-icon-delete" data-rel="close">Close Menu</a></li>
+                    <li><a href="#home" class="ui-btn ui-btn-icon-right ui-icon-carat-r panel-active">Home</a></li>
+                    <li><a href="#hiw" class="ui-btn ui-btn-icon-right ui-icon-carat-r">How it Works</a></li>
+                    <li><a href="#about" class="ui-btn ui-btn-icon-right ui-icon-carat-r">About Us</a></li>
+                    <li><a href="#faq" class="ui-btn ui-btn-icon-right ui-icon-carat-r">FAQ</a></li>
+                    <li><a href="#terms" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Terms</a></li>
+                    <li><a href="#rates" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Rates &amp; Fees</a></li>
+                    <li><a href="#privacy" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Privacy</a></li>
+                    <li><a href="#contact" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Contact Us</a></li>
+                </ul>
+            </div>
+        </div><!-- ./panel -->
         <header>
             <section class="row">
                 <div class="col3">
@@ -52,6 +69,7 @@
                     </nav>
                     <button class="btn btn-yellow pull-right">Member's Area</button>
                     <button class="btn btn-red pull-right">Apply Now!</button>
+                    <button class="btn btn-white mobile"><a href="#hpanel" data-icon="bars" class="menu">Menu</a></button>
                 </div>
         </header>
         <div class="u-header">
@@ -238,7 +256,8 @@
             </section>
         </footer>
     </div><!-- /.container -->
-    <script src="scripts/jquery-2.1.1.min.js"></script>    
+    <script src="scripts/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
     <script src="scripts/jquery-ui.min.js"></script>
     <script>
         $(document).ready(function() {

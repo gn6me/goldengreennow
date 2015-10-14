@@ -1,0 +1,468 @@
+.ui-btn {
+	text-decoration: none;
+	padding: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.ui-listview,
+.ui-listview > li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.ui-content .ui-listview,
+.ui-panel-inner > .ui-listview {
+	margin: -1em;
+}
+.ui-content .ui-listview-inset,
+.ui-panel-inner > .ui-listview-inset {
+	margin: 1em 0;
+}
+.ui-collapsible-content > .ui-listview {
+	margin: -.5em -1em;
+}
+.ui-collapsible-content > .ui-listview-inset {
+	margin: .5em 0;
+}
+.ui-listview > li {
+	display: block;
+	position: relative;
+	overflow: visible;
+}
+.ui-listview > .ui-li-static,
+.ui-listview > .ui-li-divider,
+.ui-listview > li > a.ui-btn {
+	margin: 0;
+	display: block;
+	position: relative;
+	text-align: left;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.ui-listview > li > .ui-btn:focus {
+	z-index: 1;
+}
+.ui-listview > .ui-li-static,
+.ui-listview > .ui-li-divider,
+.ui-listview > li > a.ui-btn {
+	border-width: 1px 0 0 0;
+	border-style: solid;
+}
+.ui-listview-inset > .ui-li-static,
+.ui-listview-inset > .ui-li-divider,
+.ui-listview-inset > li > a.ui-btn {
+	border-right-width: 1px;
+	border-left-width: 1px;
+}
+.ui-listview > .ui-li-static.ui-last-child,
+.ui-listview > .ui-li-divider.ui-last-child,
+.ui-listview > li.ui-last-child > a.ui-btn {
+	border-bottom-width: 1px;
+}
+.ui-collapsible-content > .ui-listview:not(.ui-listview-inset) > li.ui-first-child,
+.ui-collapsible-content > .ui-listview:not(.ui-listview-inset) > li.ui-first-child > a.ui-btn {
+	border-top-width: 0;
+}
+.ui-collapsible-themed-content .ui-listview:not(.ui-listview-inset) > li.ui-last-child,
+.ui-collapsible-themed-content .ui-listview:not(.ui-listview-inset) > li.ui-last-child > a.ui-btn {
+	border-bottom-width: 0;
+}
+.ui-listview > li.ui-first-child,
+.ui-listview > li.ui-first-child > a.ui-btn {
+	-webkit-border-top-right-radius: inherit;	
+	border-top-right-radius: inherit;
+	-webkit-border-top-left-radius: inherit;
+	border-top-left-radius: inherit;
+}
+.ui-listview > li.ui-last-child,
+.ui-listview > li.ui-last-child > a.ui-btn {
+	-webkit-border-bottom-right-radius: inherit;
+	border-bottom-right-radius: inherit;
+	-webkit-border-bottom-left-radius: inherit;
+	border-bottom-left-radius: inherit;
+}
+.ui-listview > li.ui-li-has-alt > a.ui-btn {
+	-webkit-border-top-right-radius: 0;
+	border-top-right-radius: 0;
+	-webkit-border-bottom-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.ui-listview > li.ui-first-child > a.ui-btn + a.ui-btn {
+	-webkit-border-top-left-radius: 0;	
+	border-top-left-radius: 0;
+	-webkit-border-top-right-radius: inherit;
+	border-top-right-radius: inherit;
+}
+.ui-listview > li.ui-last-child > a.ui-btn + a.ui-btn {
+	-webkit-border-bottom-left-radius: 0;
+	border-bottom-left-radius: 0;
+	-webkit-border-bottom-right-radius: inherit;
+	border-bottom-right-radius: inherit;
+}
+.ui-listview > li.ui-first-child img:first-child:not(.ui-li-icon) {
+	-webkit-border-top-left-radius: inherit;
+	border-top-left-radius: inherit;	
+}
+.ui-listview > li.ui-last-child img:first-child:not(.ui-li-icon) {
+	-webkit-border-bottom-left-radius: inherit;
+	border-bottom-left-radius: inherit;	
+}
+.ui-collapsible-content > .ui-listview:not(.ui-listview-inset) {
+	-webkit-border-radius: inherit;
+	border-radius: inherit;	
+}
+.ui-listview > .ui-li-static {
+	padding: .7em 1em;
+}
+.ui-listview > .ui-li-divider {
+	padding: .5em 1.143em;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: default;
+	outline: 0; /* Dividers in custom selectmenus have tabindex */
+}
+.ui-listview > .ui-li-has-count > .ui-btn,
+.ui-listview > .ui-li-static.ui-li-has-count,
+.ui-listview > .ui-li-divider.ui-li-has-count {
+	padding-right: 2.8125em;
+}
+.ui-listview > .ui-li-has-count > .ui-btn-icon-right {
+	padding-right: 4.6875em;
+}
+.ui-listview > .ui-li-has-thumb > .ui-btn,
+.ui-listview > .ui-li-static.ui-li-has-thumb {
+	min-height: 3.625em;
+	padding-left: 6.25em;
+}
+/* ui-li-has-icon deprecated in 1.4. TODO: remove in 1.5 */
+.ui-listview > .ui-li-has-icon > .ui-btn,
+.ui-listview > .ui-li-static.ui-li-has-icon {
+	min-height: 1.25em;
+	padding-left: 2.5em;
+}
+/* Used by both listview and custom multiple select button */
+.ui-li-count {
+	position: absolute;
+	font-size: 12.5px;
+	font-weight: bold;
+	text-align: center;
+	border-width: 1px;
+	border-style: solid;
+	padding: 0 .48em;
+	line-height: 1.6em;
+	min-height: 1.6em;
+	min-width: .64em;
+	right: .8em;
+	top: 50%;
+	margin-top: -.88em;
+}
+.ui-listview .ui-btn-icon-right .ui-li-count {
+	right: 3.2em;
+}
+.ui-listview .ui-li-has-thumb > img:first-child,
+.ui-listview .ui-li-has-thumb > .ui-btn > img:first-child,
+.ui-listview .ui-li-has-thumb .ui-li-thumb {
+	position: absolute;
+	left: 0;
+	top: 0;
+	max-height: 5em;
+	max-width: 5em;
+}
+/* ui-li-has-icon deprecated in 1.4. TODO: remove in 1.5 */
+.ui-listview > .ui-li-has-icon > img:first-child,
+.ui-listview > .ui-li-has-icon > .ui-btn > img:first-child {
+	position: absolute;
+	left: .625em;
+	top: .9em;
+	max-height: 1em;
+	max-width: 1em;
+}
+.ui-listview > li h1,
+.ui-listview > li h2,
+.ui-listview > li h3,
+.ui-listview > li h4,
+.ui-listview > li h5,
+.ui-listview > li h6 {
+	font-size: 1em;
+	font-weight: bold;
+	display: block;
+	margin: .45em 0;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.ui-listview > li p {
+	font-size: .75em;
+	font-weight: normal;
+	display: block;
+	margin: .6em 0;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.ui-listview .ui-li-aside {
+	position: absolute;
+	top: 1em;
+	right: 3.333em;
+	margin: 0;
+	text-align: right;
+}
+.ui-listview > li.ui-li-has-alt > .ui-btn {
+	margin-right: 2.5em;
+	border-right-width: 0;
+}
+.ui-listview > li.ui-li-has-alt > .ui-btn + .ui-btn {
+	position: absolute;
+	width: 2.5em;
+	height: 100%;
+	min-height: auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-left-width: 1px;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	z-index: 2;
+}
+.ui-listview-inset > li.ui-li-has-alt > .ui-btn + .ui-btn {
+	border-right-width: 1px;
+}
+.ui-listview > li.ui-li-has-alt > .ui-btn + .ui-btn:focus {
+	z-index: 3;
+}
+
+/* Panel */
+.ui-panel {
+	width: 17em;
+	min-height: 100%;
+	max-height: none;
+	border-width: 0;
+	position: absolute;
+	top: 0;
+	display: block;
+}
+.ui-panel-closed {
+	width: 0;
+	max-height: 100%;
+	overflow: hidden;
+	visibility: hidden;
+	left: 0;
+	clip: rect(1px,1px,1px,1px);
+}
+.ui-panel-fixed {
+	position: fixed;
+	bottom: -1px; /* Fixes gap on Chrome for Android */
+	padding-bottom: 1px;
+}
+.ui-panel-display-reveal {
+	z-index: 1;
+}
+.ui-panel-display-push {
+	z-index: 999;
+}
+.ui-panel-display-overlay {
+	z-index: 1001; /* Fixed toolbars have z-index 1000 */
+}
+.ui-panel-inner {
+	padding: 1em;
+}
+/* Container, page and wrapper */
+.ui-panel-page-container {
+	overflow-x: visible;
+}
+.ui-panel-page-container-themed .ui-page-active {
+	background: none;
+}
+.ui-panel-wrapper {
+	position: relative;
+	min-height: inherit;
+	border: 0;
+	overflow-x: hidden;
+	z-index: 999;
+}
+/* Fixed toolbars */
+.ui-panel-fixed-toolbar {
+	overflow-x: hidden;
+}
+/* Dismiss */
+.ui-panel-dismiss {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	z-index: 1002;
+	display: none;
+}
+.ui-panel-dismiss-open {
+	display: block;
+}
+/* Animate class is added to panel, wrapper and fixed toolbars */
+.ui-panel-animate {
+	-webkit-transition: -webkit-transform 300ms ease;
+	-webkit-transition-duration: 300ms;
+	-moz-transition: -moz-transform 300ms ease;
+	transition: transform 300ms ease;
+}
+/* Fix for Windows Phone issue #6349: unset the transition for transforms in case of fixed toolbars. */
+@media screen and ( max-device-width: 768px ) {
+	.ui-page-header-fixed .ui-panel-animate.ui-panel-wrapper,
+	.ui-page-footer-fixed .ui-panel-animate.ui-panel-wrapper,
+	.ui-panel-animate.ui-panel-fixed-toolbar {
+		-ms-transition: none;
+	}
+	/* We need a transitionend event ... */
+	.ui-panel-animate.ui-panel-fixed-toolbar {
+		-ms-transition: -ms-transform 1ms;
+		-ms-transform: rotate(0deg);
+	}
+}
+/* Hardware acceleration for smoother transitions on WebKit browsers */
+.ui-panel-animate.ui-panel:not(.ui-panel-display-reveal) {
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translate3d(0,0,0);
+}
+/* Panel positioning (for overlay and push) */
+/* Panel left closed */
+.ui-panel-position-left {
+	left: -17em;
+}
+/* Panel left closed animated */
+.ui-panel-animate.ui-panel-position-left.ui-panel-display-overlay,
+.ui-panel-animate.ui-panel-position-left.ui-panel-display-push {
+	left: 0;
+	-webkit-transform: translate3d(-17em,0,0);
+	-moz-transform: translate3d(-17em,0,0);
+	transform: translate3d(-17em,0,0);
+}
+/* Panel left open */
+.ui-panel-position-left.ui-panel-display-reveal, /* Unset "panel left closed" for reveal */
+.ui-panel-open.ui-panel-position-left {
+	left: 0;
+}
+/* Panel left open animated */
+.ui-panel-animate.ui-panel-open.ui-panel-position-left.ui-panel-display-overlay,
+.ui-panel-animate.ui-panel-open.ui-panel-position-left.ui-panel-display-push {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	-moz-transform: none;
+}
+/* Panel right closed */
+.ui-panel-position-right {
+	right: -17em;
+}
+/* Panel right closed animated */
+.ui-panel-animate.ui-panel-position-right.ui-panel-display-overlay,
+.ui-panel-animate.ui-panel-position-right.ui-panel-display-push {
+	right: 0;
+	-webkit-transform: translate3d(17em,0,0);
+	-moz-transform: translate3d(17em,0,0);
+	transform: translate3d(17em,0,0);
+}
+/* Panel right open */
+.ui-panel-position-right.ui-panel-display-reveal, /* Unset "panel right closed" for reveal */
+.ui-panel-position-right.ui-panel-open {
+	right: 0;
+}
+/* Panel right open animated */
+.ui-panel-animate.ui-panel-open.ui-panel-position-right.ui-panel-display-overlay,
+.ui-panel-animate.ui-panel-open.ui-panel-position-right.ui-panel-display-push {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	-moz-transform: none;
+}
+/* Wrapper and fixed toolbars positioning (for reveal and push) */
+/* Panel left open */
+.ui-panel-page-content-position-left {
+	left: 17em;
+	right: -17em;
+}
+/* Panel left open animated */
+.ui-panel-animate.ui-panel-page-content-position-left {
+	left: 0;
+	right: 0;
+	-webkit-transform: translate3d(17em,0,0);
+	-moz-transform: translate3d(17em,0,0);
+	transform: translate3d(17em,0,0);
+}
+/* Panel right open */
+.ui-panel-page-content-position-right {
+	left: -17em;
+	right: 17em;
+}
+/* Panel right open animated */
+.ui-panel-animate.ui-panel-page-content-position-right {
+	left: 0;
+	right: 0;
+	-webkit-transform: translate3d(-17em,0,0);
+	-moz-transform: translate3d(-17em,0,0);
+	transform: translate3d(-17em,0,0);
+}
+/* Dismiss model open */
+.ui-panel-dismiss-open.ui-panel-dismiss-position-left {
+	left: 17em;
+}
+.ui-panel-dismiss-open.ui-panel-dismiss-position-right {
+	right: 17em;
+}
+/* Shadows and borders */
+.ui-panel-display-reveal {
+	-webkit-box-shadow: inset -5px 0 5px rgba(0,0,0,.15);
+	-moz-box-shadow: inset -5px 0 5px rgba(0,0,0,.15);
+	box-shadow: inset -5px 0 5px rgba(0,0,0,.15);
+}
+.ui-panel-position-right.ui-panel-display-reveal {
+	-webkit-box-shadow: inset 5px 0 5px rgba(0,0,0,.15);
+	-moz-box-shadow: inset 5px 0 5px rgba(0,0,0,.15);
+	box-shadow: inset 5px 0 5px rgba(0,0,0,.15);
+}
+.ui-panel-display-overlay {
+	-webkit-box-shadow: 5px 0 5px rgba(0,0,0,.15);
+	-moz-box-shadow: 5px 0 5px rgba(0,0,0,.15);
+	box-shadow: 5px 0 5px rgba(0,0,0,.15);
+}
+.ui-panel-position-right.ui-panel-display-overlay {
+	-webkit-box-shadow: -5px 0 5px rgba(0,0,0,.15);
+	-moz-box-shadow: -5px 0 5px rgba(0,0,0,.15);
+	box-shadow: -5px 0 5px rgba(0,0,0,.15);
+}
+.ui-panel-open.ui-panel-position-left.ui-panel-display-push {
+	border-right-width: 1px;
+	margin-right: -1px;
+}
+.ui-panel-page-content-position-left.ui-panel-page-content-display-push {
+	margin-left: 1px;
+	width: auto;
+}
+.ui-panel-open.ui-panel-position-right.ui-panel-display-push {
+	border-left-width: 1px;
+	margin-left: -1px;
+}
+.ui-panel-page-content-position-right.ui-panel-page-content-display-push {
+	margin-right: 1px;
+	width: auto;
+}
+/* Responsive: wrap on wide viewports once open */
+@media (min-width:55em) {
+	.ui-responsive-panel .ui-panel-page-content-open.ui-panel-page-content-position-left {
+		margin-right: 17em;
+	}
+	.ui-responsive-panel .ui-panel-page-content-open.ui-panel-page-content-position-right {
+		margin-left: 17em;
+	}
+	.ui-responsive-panel .ui-panel-page-content-open {
+		width: auto;	
+	}
+	.ui-responsive-panel .ui-panel-dismiss-display-push,
+	.ui-responsive-panel.ui-page-active ~ .ui-panel-dismiss-display-push {
+		display: none;
+	}
+}
+.ui-tabs {
+	position: relative;/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+	padding: .2em;
+}

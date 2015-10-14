@@ -1,7 +1,27 @@
 /* LOST GRID STYLES */
+section {
+	*zoom: 1;
+}
+section *:not(input):not(textarea):not(select) {
+	background-color: #0000FF;
+	background-color: rgba(0, 0, 255, 0.1);
+}
+section:before {
+	content: '';
+	display: table;
+}
+section:after {
+	content: '';
+	display: table;
+	clear: both;
+}
 .row { 
 	*zoom: 1;
 	padding: 20px;
+}
+.row *:not(input):not(textarea):not(select) {
+	background-color: #0000FF;
+	background-color: rgba(0, 0, 255, 0.1);
 }
 .row:before {
 	content: '';
@@ -164,6 +184,57 @@ div.col3-4:nth-child(4n) {
 div.col3-4:nth-child(4n + 1) {
 	clear: left;
 }
+div.col5 {
+	width: calc(99.99% * 1/5 - 24px);
+}
+div.col5:nth-child(n) {
+	float: left;
+	margin-right: 30px;
+	clear: none;
+}
+div.col5:last-child {
+	margin-right: 0;
+}
+div.col5:nth-child(5n) {
+	margin-right: 0;
+}
+div.col5:nth-child(5n + 1) {
+	clear: left;
+}
+div.col6 {
+	width: calc(99.99% * 1/6 - 25px);
+}
+div.col6:nth-child(n) {
+	float: left;
+	margin-right: 30px;
+	clear: none;
+}
+div.col6:last-child {
+	margin-right: 0;
+}
+div.col6:nth-child(6n) {
+	margin-right: 0;
+}
+div.col6:nth-child(6n + 1) {
+	clear: left;
+}
+div.sixth {
+	width: calc(99.99% * 1/6 - 25px);
+}
+div.sixth:nth-child(n) {
+	float: left;
+	margin-right: 30px;
+	clear: none;
+}
+div.sixth:last-child {
+	margin-right: 0;
+}
+div.sixth:nth-child(0n) {
+	margin-right: 0;
+}
+div.sixth:nth-child(0n + 1) {
+	clear: left;
+}
 
 @media (max-width: 1020px) {
 	div.col4 {
@@ -294,8 +365,7 @@ div.col3-4:nth-child(4n + 1) {
 body {
 	margin: 0;
 	padding: 0;
-	font: 16px 'Open Sans', sans-serif;
-	font: 1rem 'Open Sans', sans-serif;
+	font: 1em 'Open Sans', sans-serif;
 	color: rgb(134, 134, 134);
 	background: #000;
 }
@@ -344,8 +414,7 @@ nav ul li a {
 	padding: 10px 30px;
 	color: #fff !important;
 	font-weight: bold;
-	font-size: 17px;
-	font-size: 1.1rem;
+	font-size: 1.1em;
 	text-decoration: none;
 	text-transform: uppercase;
 	transition: all 0.3s ease;
@@ -373,8 +442,7 @@ div.u-header h3 {
 	color: rgb(56, 89, 64);
 	font-style: italic;
 	text-transform: uppercase;
-	font-size: 17px;
-	font-size: 1.1rem;
+	font-size: 1.1em;
 }
 
 div.fBox {
@@ -422,6 +490,7 @@ div.fBox h4 {
 /* BUTTON STYLES */
 
 .btn {
+	width: 100%;
 	padding: 10px;
 	text-transform: uppercase;
 	color: #fff;
@@ -479,32 +548,25 @@ h6 {
 	color: rgb(96, 96, 96);
 }
 h1 {
-	font-size: 64px;
-	font-size: 4rem;
+	font-size: 4em;
 }
 h2 {
-	font-size: 48px;
-	font-size: 3rem;
+	font-size: 3em;
 }
 h3 {
-	font-size: 32px;
-	font-size: 2rem;
+	font-size: 2em;
 }
 h3.lg {
-	font-size: 48px;
-	font-size: 3rem;
+	font-size: 3em;
 }
 h4 {
-	font-size: 24px;
-	font-size: 1.5rem;
+	font-size: 1.5em;
 }
 h5 {
-	font-size: 20px;
-	font-size: 1.3rem;
+	font-size: 1.3em;
 }
 h6 {
-	font-size: 19px;
-	font-size: 1.2rem;
+	font-size: 1.2em;
 }
 
 blockquote {
@@ -527,8 +589,7 @@ input.field {
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	margin-bottom: 20px;
-	font-size: 19px;
-	font-size: 1.2rem;
+	font-size: 1.2em;
 }
 .submit {
 	clear: both;
@@ -537,8 +598,7 @@ input.field {
 	padding: 13px 20px;
 	color: #fff;
 	background: #e7503c;
-	font-size: 19px;
-	font-size: 1.2rem;
+	font-size: 1.2em;
 	font-weight: bold;
 	text-transform: uppercase;
 	border: 1px solid transparent;
@@ -567,12 +627,10 @@ input.field {
 .pullRight { float: right; }
 
 .small {
-	font-size: 14px;
-	font-size: 0.90909rem;
+	font-size: 0.90909em;
 }
 .xSmall {
-	font-size: 12px;
-	font-size: 0.76923rem;
+	font-size: 0.76923em;
 }
 
 .quote {

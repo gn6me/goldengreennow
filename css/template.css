@@ -165,9 +165,9 @@ div.col3-4:nth-child(4n + 1) {
 	clear: left;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 	div.col4 {
-		width: calc(99.99% * 1/3 - 20px);
+		width: calc(99.99% * 1/2 - 15px);
 	}
 	div.col4:nth-child(n) {
 		float: left;
@@ -177,14 +177,14 @@ div.col3-4:nth-child(4n + 1) {
 	div.col4:last-child {
 		margin-right: 0;
 	}
-	div.col4:nth-child(3n) {
+	div.col4:nth-child(2n) {
 		margin-right: 0;
 	}
-	div.col4:nth-child(3n + 1) {
+	div.col4:nth-child(2n + 1) {
 		clear: left;
 	}
 	div.col3-4 {
-		width: calc(99.99% * 2/3 - 10px);
+		width: calc(99.99% * 1/2 - 15px);
 	}
 	div.col3-4:nth-child(n) {
 		float: left;
@@ -194,14 +194,14 @@ div.col3-4:nth-child(4n + 1) {
 	div.col3-4:last-child {
 		margin-right: 0;
 	}
-	div.col3-4:nth-child(3n) {
+	div.col3-4:nth-child(2n) {
 		margin-right: 0;
 	}
-	div.col3-4:nth-child(3n + 1) {
+	div.col3-4:nth-child(2n + 1) {
 		clear: left;
 	}
 	div.col3 {
-		width: calc(99.99% * 1/2 - 15px);
+		width: 99.99%;
 	}
 	div.col3:nth-child(n) {
 		float: left;
@@ -211,10 +211,27 @@ div.col3-4:nth-child(4n + 1) {
 	div.col3:last-child {
 		margin-right: 0;
 	}
-	div.col3:nth-child(2n) {
+	div.col3:nth-child(1n) {
 		margin-right: 0;
 	}
-	div.col3:nth-child(2n + 1) {
+	div.col3:nth-child(1n + 1) {
+		clear: left;
+	}
+	div.col2 {
+		width: 99.99%;
+	}
+	div.col2:nth-child(n) {
+		float: left;
+		margin-right: 30px;
+		clear: none;
+	}
+	div.col2:last-child {
+		margin-right: 0;
+	}
+	div.col2:nth-child(1n) {
+		margin-right: 0;
+	}
+	div.col2:nth-child(1n + 1) {
 		clear: left;
 	}
 }

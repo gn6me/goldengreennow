@@ -165,7 +165,7 @@ div.col3-4:nth-child(4n + 1) {
 	clear: left;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1020px) {
 	div.col4 {
 		width: calc(99.99% * 1/2 - 15px);
 	}
@@ -382,7 +382,7 @@ div.fBox {
 	background: url('../images/photobackground.jpg') no-repeat;
 	background-size: 100%;
 }
-@media (max-width: 960px) {
+@media (max-width: 1020px) {
 	nav { display: none; }
 	.mobile { display: block; }
 	div.fBox {
@@ -460,7 +460,7 @@ div.fBox h4 {
 	border-bottom-color: rgb(151, 151, 151);
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1020px) {
 	.btn { 
 		width: 100%;
 		margin-bottom: 10px; 

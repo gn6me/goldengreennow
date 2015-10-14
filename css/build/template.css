@@ -9,7 +9,7 @@
 	--fontSize: 1rem;
 	--fontFamily: 'Open Sans', sans-serif;
 }
-@custom-media --mobileReg (width <= 1020px);
+@custom-media --mobileReg (width <= 800px);
 @custom-media --mobileSmall (width <= 500px);
 @custom-selector :--heading h1, h2, h3, h4, h5, h6;
 
@@ -219,7 +219,6 @@ div.fBox h4 {
 /* BUTTON STYLES */
 
 .btn {
-	width: 100%;
 	padding: 10px;
 	text-transform: uppercase;
 	color: var(--mainColor);

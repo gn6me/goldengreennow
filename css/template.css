@@ -365,7 +365,8 @@ div.sixth:nth-child(0n + 1) {
 body {
 	margin: 0;
 	padding: 0;
-	font: 1em 'Open Sans', sans-serif;
+	font: 16px 'Open Sans', sans-serif;
+	font: 1rem 'Open Sans', sans-serif;
 	color: rgb(134, 134, 134);
 	background: #000;
 }
@@ -414,7 +415,8 @@ nav ul li a {
 	padding: 10px 30px;
 	color: #fff !important;
 	font-weight: bold;
-	font-size: 1.1em;
+	font-size: 17px;
+	font-size: 1.1rem;
 	text-decoration: none;
 	text-transform: uppercase;
 	transition: all 0.3s ease;
@@ -442,7 +444,8 @@ div.u-header h3 {
 	color: rgb(56, 89, 64);
 	font-style: italic;
 	text-transform: uppercase;
-	font-size: 1.1em;
+	font-size: 17px;
+	font-size: 1.1rem;
 }
 
 div.fBox {
@@ -548,25 +551,32 @@ h6 {
 	color: rgb(96, 96, 96);
 }
 h1 {
-	font-size: 4em;
+	font-size: 64px;
+	font-size: 4rem;
 }
 h2 {
-	font-size: 3em;
+	font-size: 48px;
+	font-size: 3rem;
 }
 h3 {
-	font-size: 2em;
+	font-size: 32px;
+	font-size: 2rem;
 }
 h3.lg {
-	font-size: 3em;
+	font-size: 48px;
+	font-size: 3rem;
 }
 h4 {
-	font-size: 1.5em;
+	font-size: 24px;
+	font-size: 1.5rem;
 }
 h5 {
-	font-size: 1.3em;
+	font-size: 20px;
+	font-size: 1.3rem;
 }
 h6 {
-	font-size: 1.2em;
+	font-size: 19px;
+	font-size: 1.2rem;
 }
 
 blockquote {
@@ -589,7 +599,8 @@ input.field {
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	margin-bottom: 20px;
-	font-size: 1.2em;
+	font-size: 19px;
+	font-size: 1.2rem;
 }
 .submit {
 	clear: both;
@@ -598,7 +609,8 @@ input.field {
 	padding: 13px 20px;
 	color: #fff;
 	background: #e7503c;
-	font-size: 1.2em;
+	font-size: 19px;
+	font-size: 1.2rem;
 	font-weight: bold;
 	text-transform: uppercase;
 	border: 1px solid transparent;
@@ -627,10 +639,12 @@ input.field {
 .pullRight { float: right; }
 
 .small {
-	font-size: 0.90909em;
+	font-size: 14px;
+	font-size: 0.90909rem;
 }
 .xSmall {
-	font-size: 0.76923em;
+	font-size: 12px;
+	font-size: 0.76923rem;
 }
 
 .quote {

@@ -6,7 +6,7 @@
 	--redBorder: color(var(--redColor) saturation(+20%) b(50%));;
 	--yellowColor: #F7C90E;
 	--yellowBorder: color(var(--yellowColor) saturation(-20%) b(+20%));;
-	--fontSize: 1em;
+	--fontSize: 1rem;
 	--fontFamily: 'Open Sans', sans-serif;
 }
 @custom-media --mobileReg (width <= 1020px);

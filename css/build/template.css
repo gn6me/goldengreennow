@@ -200,17 +200,17 @@ div.fBox h4 {
 }
 .cash {
 	padding: 10px 0;
-	text-indent: 60px;
+	padding-left: 60px;
 	background: url('../images/cash.png') no-repeat left;
 }
 .check {
 	padding: 10px 0;
-	text-indent: 60px;
+	padding-left: 60px;
 	background: url('../images/check.png') no-repeat left;
 }
 .secure {
 	padding: 10px 0;
-	text-indent: 60px;
+	padding-left: 60px;
 	background: url('../images/secure.png') no-repeat left;
 }
 @media (--mobileReg) {

@@ -2,10 +2,6 @@
 section {
 	*zoom: 1;
 }
-section *:not(input):not(textarea):not(select) {
-	background-color: #0000FF;
-	background-color: rgba(0, 0, 255, 0.1);
-}
 section:before {
 	content: '';
 	display: table;
@@ -18,10 +14,6 @@ section:after {
 .row { 
 	*zoom: 1;
 	padding: 20px;
-}
-.row *:not(input):not(textarea):not(select) {
-	background-color: #0000FF;
-	background-color: rgba(0, 0, 255, 0.1);
 }
 .row:before {
 	content: '';
@@ -659,3 +651,5 @@ ul.green {
 .bg-grey {
 	background-color: rgb(243, 243, 243);
 }
+
+.ui-loader { display: none; }

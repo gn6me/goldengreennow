@@ -16,11 +16,9 @@
 /* LOST GRID STYLES */
 section {
 	lost-utility: clearfix;
-	lost-utility: edit;
 }
 .row { 
 	lost-utility: clearfix;
-	lost-utility: edit;
 	padding: 20px;
 }
 .row.noPad {
@@ -369,3 +367,5 @@ ul.green {
 .bg-grey {
 	background-color: color(var(--mainColor) b(5%));
 }
+
+.ui-loader { display: none; }

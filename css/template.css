@@ -481,6 +481,11 @@ div.fBox h4 {
 	text-indent: 60px;
 	background: url('../images/secure.png') no-repeat left;
 }
+@media (max-width: 800px) {
+	.cash,.check,.secure {
+		font-size: 1.42857rem;
+	}
+}
 
 /* BUTTON STYLES */
 

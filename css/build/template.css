@@ -213,6 +213,11 @@ div.fBox h4 {
 	text-indent: 60px;
 	background: url('../images/secure.png') no-repeat left;
 }
+@media (--mobileReg) {
+	.cash,.check,.secure {
+		font-size: calc(var(--fontSize) /0.7);
+	}
+}
 
 /* BUTTON STYLES */
 

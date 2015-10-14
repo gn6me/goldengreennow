@@ -5,7 +5,6 @@ module.exports = function(grunt) {
 
         postcss: {
             options: {
-                map: true,
                 processors: [
                     require('lost')
                 ]
@@ -24,12 +23,17 @@ module.exports = function(grunt) {
         },
 
         cssnext: {
-            options: {
-                sourcemap: true
-            },
             dist: {
                 files: {
                     "css/template.css": "css/template.css" //needs to grab from the same directory after postcss has run
+                }
+            }
+        },
+
+        cssnano: {
+            dist: {
+                files: {
+                    'css/template.css': 'css/template.css'
                 }
             }
         },
@@ -59,7 +63,7 @@ module.exports = function(grunt) {
             },
             postcss: {
                 files: ['css/build/template.css'],
-                tasks: ['postcss','cssnext','autoprefixer'],
+                tasks: ['postcss','cssnext','autoprefixer','cssnano'],
             },
         },
 
@@ -67,6 +71,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-postcss');
     require('load-grunt-tasks')(grunt);
 
-    grunt.registerTask('default', ['concat', 'uglify', 'postcss', 'cssnext', 'watch']);
+    grunt.registerTask('default', ['concat', 'uglify', 'watch']);
 
 };

@@ -63,7 +63,7 @@ module.exports = function(grunt) {
             },
             postcss: {
                 files: ['css/build/template.css'],
-                tasks: ['postcss','cssnext','autoprefixer','cssnano'],
+                tasks: ['postcss','cssnext','autoprefixer'],
             },
         },
 

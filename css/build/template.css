@@ -8,7 +8,8 @@
 	--fontSize: 1rem;
 	--fontFamily: 'Open Sans', sans-serif;
 }
-@custom-media --mobile (width <= 768px);
+@custom-media --mobileReg (width <= 768px);
+@custom-media --mobileSmall (width <= 500px);
 @custom-selector :--heading h1, h2, h3, h4, h5, h6;
 
 /* LOST GRID STYLES */
@@ -23,7 +24,7 @@
 	lost-align: center;
 }
 div.col1 {
-	lost-column: 1;
+	lost-column: 1/1;
 }
 div.col2 {
 	lost-column: 1/2;
@@ -45,6 +46,26 @@ div.col4 {
 }
 div.col3-4 {
 	lost-column: 3/4;
+}
+
+@media (--mobileReg) {
+	div.col4 {
+		lost-column: 1/3;
+	}
+	div.col3-4 {
+		lost-column: 2/3;
+	}
+	div.col3 {
+		lost-column: 1/2;
+	}
+}
+@media (--mobileSmall) {
+	div.col2 {
+		lost-column: 1/1;
+	}
+	div.col3,div.col2-3,div.col4,div.col3-4 {
+		lost-column: 1/1;
+	}
 }
 
 /* MAIN CSS STYLES */

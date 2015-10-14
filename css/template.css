@@ -165,7 +165,7 @@ div.col3-4:nth-child(4n + 1) {
 	clear: left;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 960px) {
 	div.col4 {
 		width: calc(99.99% * 1/2 - 15px);
 	}

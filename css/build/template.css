@@ -180,7 +180,7 @@ div.fBox {
 }
 div.fBox .cAlign {
 	/*top: 50px;*/
-	margin: 20px 0;
+	margin: 40px 0 20px;
 }
 div.fBox h3 {
 	color: color(var(--greenColor) b(65%));

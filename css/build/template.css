@@ -71,7 +71,7 @@ div.sixth {
 	div.col3 {
 		lost-column: 1/1;
 	}
-	div.col2 {
+	div.col2,div.half {
 		lost-column: 1/1;
 	}
 	div.col2-3 {

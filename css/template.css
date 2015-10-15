@@ -448,6 +448,7 @@ div.fBox {
 }
 div.fBox .cAlign {
 	/*top: 50px;*/
+	margin: 20px 0;
 }
 div.fBox h3 {
 	color: rgb(56, 89, 64);

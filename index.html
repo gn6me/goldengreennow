@@ -7,8 +7,7 @@
     <meta name="keywords" content="cash advance,cash loans,payday loans,loans,easy loan,quick loan,fast loan,fast cash,extra cash,quick cash,easy approval,no score check,same day approval,quick approval,bad credit">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/build/mobile.css">
-    <link rel="stylesheet" href="http://goldengreennow.co/mobile/mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.3.4/css/jquery.mmenu.all.min.css">
     <link rel="stylesheet" href="css/template.css">
     <script type="text/javascript">
         function bookmark(url, title)
@@ -38,28 +37,13 @@
 </head>
 <body>
     <div class="container">
-        <div data-role="panel" class="ui-body-g" data-display="overlay" data-position="right" id="hpanel">
-            <div class="ui-panel-inner">
-                <ul data-role="listview">
-                    <li><a href="#home" class="ui-btn ui-btn-icon-right ui-icon-delete" data-rel="close">Close Menu</a></li>
-                    <li><a href="#home" class="ui-btn ui-btn-icon-right ui-icon-carat-r panel-active">Home</a></li>
-                    <li><a href="#hiw" class="ui-btn ui-btn-icon-right ui-icon-carat-r">How it Works</a></li>
-                    <li><a href="#about" class="ui-btn ui-btn-icon-right ui-icon-carat-r">About Us</a></li>
-                    <li><a href="#faq" class="ui-btn ui-btn-icon-right ui-icon-carat-r">FAQ</a></li>
-                    <li><a href="#terms" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Terms</a></li>
-                    <li><a href="#rates" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Rates &amp; Fees</a></li>
-                    <li><a href="#privacy" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Privacy</a></li>
-                    <li><a href="#contact" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Contact Us</a></li>
-                </ul>
-            </div>
-        </div><!-- ./panel -->
         <header>
             <section class="row">
                 <div class="col3">
                     <img src="images/logo.png" />
                 </div>
                 <div class="col2-3">
-                    <nav>
+                    <nav class="menu">
                         <ul>
                             <li><a href="">Home</a></li>
                             <li class="circle"><a href="#hiw">How it Works</a></li>
@@ -70,7 +54,16 @@
                     </nav>
                     <button class="btn btn-yellow pull-right">Member's Area</button>
                     <button class="btn btn-red pull-right">Apply Now!</button>
-                    <button class="btn btn-white mobile"><a href="#hpanel" data-icon="bars" class="menu">Menu</a></button>
+                    <button class="btn btn-white mobile"><a href="#menu" data-icon="bars" class="menu">Menu</a></button>
+                    <nav id="menu">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li class="circle"><a href="#hiw">How it Works</a></li>
+                            <li class="circle"><a href="#faq">FAQ</a></li>
+                            <li class="circle"><a href="">About</a></li>
+                            <li class="circle"><a href="">Contact</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </section>
         </header>
@@ -259,6 +252,7 @@
         </footer>
     </div><!-- /.container -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.3.4/js/jquery.mmenu.min.all.min.js"></script>
     <script>
         $(document).ready(function() {
             $('[class^="question"]').on('click', function(e){
@@ -273,6 +267,36 @@
                     'slow');
                 });
             }); 
+    </script>
+    <script type="text/javascript">
+            $(function() {
+                $('nav#menu').mmenu({
+                    extensions  : [ 'effect-slide-menu', 'pageshadow' ],
+                    searchfield : true,
+                    counters    : true,
+                    navbar      : {
+                        title       : 'Main Menu'
+                    },
+                    navbars     : [
+                        {
+                            position    : 'top',
+                            content     : [ 'searchfield' ]
+                        }, {
+                            position    : 'top',
+                            content     : [
+                                'prev',
+                                'title',
+                                'close'
+                            ]
+                        }, {
+                            position    : 'bottom',
+                            content     : [
+                                '<a href="http://mmenu.frebsite.nl/wordpress-plugin.html" target="_blank">WordPress plugin</a>'
+                            ]
+                        }
+                    ]
+                });
+            });
     </script>
 </body>
 </html>

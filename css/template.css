@@ -378,22 +378,22 @@ header img {
 	height: auto;
 }
 
-nav {
+nav.menu {
 	width: 100%;
 	float: left;
 }
-nav ul {
+nav.menu ul {
 	float: right;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
-nav ul li {
+nav.menu ul li {
 	position: relative;
 	float: left;
 	margin: 0;
 }
-nav ul li.circle a:before {
+nav.menu ul li.circle a:before {
 	position: absolute;
 	left: -6px;
 	top: 50%;
@@ -402,7 +402,7 @@ nav ul li.circle a:before {
 	content: "\f10c";
 	color: rgb(56, 77, 61);
 }
-nav ul li a {
+nav.menu ul li a {
 	display: block;
 	padding: 10px 30px;
 	color: #fff !important;
@@ -414,16 +414,8 @@ nav ul li a {
 	transition: all 0.3s ease;
 	-webkit-transition: all 0.3s ease;
 }
-nav ul li a:hover {
+nav.menu ul li a:hover {
 	color: rgb(56, 89, 64) !important;
-}
-.mobile { display: none; }
-.menu,.menu:visited {
-	display: block;
-	color: rgb(142, 142, 142);
-	text-decoration: none;
-	text-transform: uppercase;
-	font-weight: bold;
 }
 
 div.u-header {
@@ -443,10 +435,11 @@ div.u-header h3 {
 div.fBox {
 	text-align: center;
 	background: url('../images/photobackground.jpg') no-repeat;
-	background-size: 100%;
+	background-size: 100% auto;
 }
+.mobile { display: none; }
 @media (max-width: 800px) {
-	nav { display: none; }
+	nav.menu { display: none; }
 	.mobile { display: block; }
 	div.fBox {
 		background: rgb(102, 214, 130);
@@ -516,6 +509,10 @@ div.fBox h4 {
 .btn-yellow:hover {
 	background: rgb(230, 185, 5);
 	border-bottom-color: rgb(135, 118, 48);
+}
+.btn-white a,.btn-white a:visited,.btn-white a:hover {
+	color: rgb(142, 142, 142);
+	text-decoration: none;
 }
 .btn-white {
 	width: 100%;

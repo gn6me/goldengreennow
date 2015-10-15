@@ -25,7 +25,7 @@ section {
 	padding: 0;
 }
 .cAlign {
-	lost-align: center;
+	lost-align: middle-center;
 }
 div.col1 {
 	lost-column: 1/1;
@@ -179,7 +179,7 @@ div.fBox {
 	}
 }
 div.fBox .cAlign {
-	top: 50px;
+	/*top: 50px;*/
 }
 div.fBox h3 {
 	color: color(var(--greenColor) b(65%));

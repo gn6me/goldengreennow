@@ -46,8 +46,8 @@
                     <nav class="menu">
                         <ul>
                             <li><a href="">Home</a></li>
-                            <li class="circle"><a href="#hiw">How it Works</a></li>
-                            <li class="circle"><a href="#faq">FAQ</a></li>
+                            <li class="circle"><a class="hiw" href="#hiw">How it Works</a></li>
+                            <li class="circle"><a class="faq" href="#faq">FAQ</a></li>
                             <li class="circle"><a href="">About</a></li>
                             <li class="circle"><a href="">Contact</a></li>
                         </ul>
@@ -58,8 +58,8 @@
                     <nav id="menu">
                         <ul>
                             <li><a href="">Home</a></li>
-                            <li class="circle"><a href="#hiw">How it Works</a></li>
-                            <li class="circle"><a href="#faq">FAQ</a></li>
+                            <li class="circle"><a class="hiw" href="#hiw">How it Works</a></li>
+                            <li class="circle"><a class="faq" href="#faq">FAQ</a></li>
                             <li class="circle"><a href="">About</a></li>
                             <li class="circle"><a href="">Contact</a></li>
                         </ul>
@@ -261,8 +261,13 @@
                 $('html,body').animate({
                     scrollTop: $("#approval").offset().top},
                     'slow');
+                }); 
+            $(".circle").click(function() {
+                $('html,body').animate({
+                    scrollTop: $("#hiw").offset().top},
+                    'slow');
                 });
-            }); 
+            });
     </script>
     <script type="text/javascript">
             $(function() {

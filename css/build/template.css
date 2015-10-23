@@ -167,7 +167,7 @@ div.u-header h3 {
 div.fBox {
 	text-align: center;
 	background: url('../images/photobackground.jpg') no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
 }
 .mobile { display: none; }
 @media (--mobileReg) {
@@ -191,6 +191,13 @@ div.fBox h3.lg {
 div.fBox h4 {
 	color: color(var(--greenColor) b(65%));
 	font-weight: normal;
+}
+@media (--mobileReg) {
+	.formline {
+		float: none !important;
+		max-width: 370px;
+		margin: 0 auto !important;
+	}
 }
 .cash {
 	padding: 10px 0;
@@ -243,17 +250,20 @@ div.fBox h4 {
 	background: color(var(--yellowColor) saturation(+10%) b(+10%));
 	border-bottom-color: color(var(--yellowBorder) saturation(-10%) b(+10%));
 }
-.btn-white a,.btn-white a:visited,.btn-white a:hover {
-	color: color(var(--mainColor) b(80%));
-	text-decoration: none;
-}
+
 .btn-white {
-	width: 100%;
+	width: 95%;
+	clear: both;
 	margin: 0 auto;
+	text-align: center;
+	font-size: calc(var(--fontSize) /1.2);
+	color: color(var(--mainColor) b(80%));
 	background: var(--mainColor);
 	border-bottom: 3px solid var(--mainBorder);
+	text-decoration: none;
 }
 .btn-white:hover {
+	color: color(var(--mainColor) b(80%));
 	background: color(var(--mainColor) b(10%));
 	border-bottom-color: color(var(--mainBorder) b(+30%));
 }
@@ -263,6 +273,7 @@ div.fBox h4 {
 		width: 100%;
 		margin-bottom: 10px; 
 	}
+	.btn-white { width: 95%; }
 	.btn-red { margin-right: 0; }
 }
 
@@ -305,8 +316,6 @@ a:hover {
 	text-decoration: none;
 }
 
-form {
-}
 input.field {
 	width: 290px;
 	padding: 7px;
@@ -338,9 +347,7 @@ input.field {
 .white {
 	color: var(--mainColor);
 }
-.darkText {
-	color: ;
-}
+
 .upper {
 	text-transform: uppercase;
 	text-align:left;
@@ -349,6 +356,11 @@ input.field {
 .center { text-align: center; }
 .pullCenter { margin: 0 auto; }
 .pullRight { float: right; }
+
+.secureAlign {
+	max-width: 395px;
+	margin: 0 auto;
+}
 
 .small {
 	font-size: calc(var(--fontSize) /1.1);

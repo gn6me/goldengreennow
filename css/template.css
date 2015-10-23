@@ -435,7 +435,7 @@ div.u-header h3 {
 div.fBox {
 	text-align: center;
 	background: url('../images/photobackground.jpg') no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
 }
 .mobile { display: none; }
 @media (max-width: 800px) {
@@ -459,6 +459,13 @@ div.fBox h3.lg {
 div.fBox h4 {
 	color: rgb(56, 89, 64);
 	font-weight: normal;
+}
+@media (max-width: 800px) {
+	.formline {
+		float: none !important;
+		max-width: 370px;
+		margin: 0 auto !important;
+	}
 }
 .cash {
 	padding: 10px 0;
@@ -511,17 +518,21 @@ div.fBox h4 {
 	background: rgb(230, 185, 5);
 	border-bottom-color: rgb(135, 118, 48);
 }
-.btn-white a,.btn-white a:visited,.btn-white a:hover {
-	color: rgb(142, 142, 142);
-	text-decoration: none;
-}
+
 .btn-white {
-	width: 100%;
+	width: 95%;
+	clear: both;
 	margin: 0 auto;
+	text-align: center;
+	font-size: 13px;
+	font-size: 0.83333rem;
+	color: rgb(142, 142, 142);
 	background: #fff;
 	border-bottom: 3px solid rgb(196, 196, 196);
+	text-decoration: none;
 }
 .btn-white:hover {
+	color: rgb(142, 142, 142);
 	background: rgb(232, 232, 232);
 	border-bottom-color: rgb(151, 151, 151);
 }
@@ -531,6 +542,7 @@ div.fBox h4 {
 		width: 100%;
 		margin-bottom: 10px; 
 	}
+	.btn-white { width: 95%; }
 	.btn-red { margin-right: 0; }
 }
 
@@ -585,8 +597,6 @@ a:hover {
 	text-decoration: none;
 }
 
-form {
-}
 input.field {
 	width: 290px;
 	padding: 7px;
@@ -620,9 +630,7 @@ input.field {
 .white {
 	color: #fff;
 }
-.darkText {
-	color: ;
-}
+
 .upper {
 	text-transform: uppercase;
 	text-align:left;
@@ -631,6 +639,11 @@ input.field {
 .center { text-align: center; }
 .pullCenter { margin: 0 auto; }
 .pullRight { float: right; }
+
+.secureAlign {
+	max-width: 395px;
+	margin: 0 auto;
+}
 
 .small {
 	font-size: 14px;

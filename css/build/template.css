@@ -221,6 +221,36 @@ div.fBox h4 {
 	}
 }
 
+/* JQueryUI Styles */
+
+#tabs ul {
+	width: 100%;
+	float: left;
+	display: block;
+	padding: 20px 0 30px;
+}
+#tabs ul,#tabs li {
+	margin: 0;
+	list-style-type:none;
+}
+#tabs li {
+	float: left;
+}
+#tabs li a {
+	display: block;
+	color: var(--redColor);
+	border: 2px solid var(--redColor);
+	background: var(--mainColor);
+	padding: 10px 15px;
+	margin: 0 5px;
+	text-decoration: none;
+	outline: 0;
+}
+#tabs li.ui-state-active a,#tabs li a:hover {
+	color: var(--mainColor);
+	background: var(--redColor);
+}
+
 #accordion h3 {
 	color: var(--greenColor);
 	cursor: pointer;

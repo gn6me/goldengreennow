@@ -234,6 +234,7 @@ div.fBox h4 {
 	list-style-type:none;
 }
 #tabs li {
+	margin: 0;
 	float: left;
 }
 #tabs li a {
@@ -242,7 +243,7 @@ div.fBox h4 {
 	border: 2px solid var(--redColor);
 	background: var(--mainColor);
 	padding: 10px 15px;
-	margin: 0 5px;
+	margin: 20px 5px;
 	text-decoration: none;
 	outline: 0;
 }

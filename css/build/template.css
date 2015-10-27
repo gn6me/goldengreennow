@@ -12,7 +12,7 @@
 }
 @custom-media --mobileReg (width <= 800px);
 @custom-media --mobileSmall (width <= 500px);
-@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+@custom-selector :--heading h1, h2, h3, h4, h5, h6, h7;
 
 /* LOST GRID STYLES */
 /* This section may need cleaning up. Lots of hacks and workarounds */
@@ -345,6 +345,10 @@ h5 {
 h6 {
 	font-size: calc(var(--fontSize) *1.2);
 }
+h7 {
+	font-size: cacl(var(--fontSize) /0.5);
+	font-weight: bold;
+}
 
 blockquote {
 	margin-left: 80px;
@@ -420,6 +424,9 @@ input.field {
 
 .green {
 	color: var(--greenColor);
+}
+.red {
+	color: var(--redColor);
 }
 ul.green {
 	color: color(var(--greenColor) saturation(-20%) b(+10%));

@@ -236,16 +236,46 @@
         <footer>
             <section class="row">
                 <div class="col1 center">
-                    <p class="small">OLA Affiliation. We are members of the Online Lenders Alliance. Please contact the OLA Consumer Hotline 866-299-7585 for any questions or concerns.</p>
-                    <p class="upper xSmall"><a href="">Home</a> | <a href="">Application</a> | <a href="">How it Works</a> | <a href="">About Us</a> | <a href="">FAQ</a> | <a href="">Privacy</a> | <a href="">Contact Us</a> | <a href="">Terms & Conditions</a> | <a href="">Members Area</a></p>
-                    <p class="small">You may be required to submit additional documentation due to state law and qualification criteria.<br />Copyright © 2013, Golden Green Services, LLC. All Rights Reserved.</p>
-                    <p class="upper xSmall"><a href="">Important Notices and Disclosures</a></p>
+                    <p class="xxSmall">OLA Affiliation. We are members of the Online Lenders Alliance. Please contact the OLA Consumer Hotline 866-299-7585 for any questions or concerns.</p>
+                    <p class="upper xSmall"><a href="https://goldengreennow.co">Home</a> | <a href="">Application</a> | <a href="howitworks.html">How it Works</a> | <a href="about.html">About Us</a> | <a href="faq.html">FAQ</a> | <a href="privacy.html">Privacy</a> | <a href="contact.html">Contact Us</a> | <a href="terms.html">Terms & Conditions</a> | <a href="">Members Area</a></p>
+                    <p class="xxSmall">You may be required to submit additional documentation due to state law and qualification criteria.<br />Copyright © 2013, Golden Green Services, LLC. All Rights Reserved.</p>
+                    <div id="accordion">
+                        <h3 class="upper xSmall">Important Notices and Disclosures</h3>
+                        <div class="slide left xxSmall">
+                            <ul>
+                                <li><strong>An advance of money obtained through a payday loan or auto title loan is not intended to meet long-term financial needs. A payday loan or auto title loan should only be used to meet immediate short-term cash needs. Refinancing the loan rather than paying the debt in full when due will require the payment of additional charges.</strong></li>
+                                <li>Loans obtained from the Companies affiliated with this website are for short term financial needs only and not intended as a long-term financial solution. A short term loan such as a payday loan, installment loan, line of credit, cash advance, credit plan agreement, or cash advance are short-term loans given to the borrower for a short period of time. Borrowers with debt and credit difficulties should seek out professional financial advice.</li>
+                                <li>The Website does not constitute an offer or solicitation to offer a loan.</li>
+                                <li>You are under no obligation to apply for credit or accept the terms of any loan and you will not be charged any fees unless you accept and sign a loan or credit plan on the terms set forth in the Agreement.</li>
+                                <li>The rates and terms will vary by individual and by state for each loan or cash advance and may NOT be available in some states.</li>
+                                <li>Due to state and verification requirements, not all applicants for online loans may be eligible for instant approval by the Companies affiliated with this website. You may be required to submit additional documentation.</li>
+                                <li>We do not perform traditional credit checks as part of our credit transaction approval process, but do verify applicant information via national databases including, but not limited to, Tele-Track and CL Verify. If you have defaulted on past transactions, you may be declined for a cash advance from this lender.</li>
+                                <li>The locations and Companies referred to on this Website may included several different Companies and entities, and not all locations and companies are affiliated with Golden Green Services, LLC.</li>
+                                <li>Interest, post maturity interest, NSF fees, and late fees may result from non-payment. Your financial institution may also charge you additional fees for insufficient funds.</li>
+                                <li>The Company complies with applicable collection laws. In some states, customers may obtain a payment plan. The Company will contact you using one or more authorized communication methods.</li>
+                                <li>There may be fees associated with renewals or extension of your loan depending on your state and type of loan. Your loan will not renew automatically. If applicable in your state, a renewal depends on the Company's underwriting criteria.</li>
+                                <li>Funds are available into your account generally the next business day after your application is approved (not pre-approved).</li>
+                                <li>A 'pre-approval does not mean that you will receive a loan. For final approval, you must meet certain criteria and verifications.</li>
+                                <li>Company Refund Policy. If there is an error regarding a withdrawal from your account Golden Green Services, LLC will review and refund within five (5) business days. If written notice is received regarding an error, Golden Green Services, LLC will review and respond within 30 days. Please note that Golden Green Services, LLC reserves the right to offset any refund against any payments due on your account.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </section>
         </footer>
     </div><!-- /.container -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.3.4/js/jquery.mmenu.min.all.min.js"></script>
+    <!-- Accordion Script for Disclosure -->
+    <script>
+        $(function() {
+            $( "#accordion" ).accordion({
+                collapsible: true,
+                active: false
+            });
+        });
+    </script>
     <!-- FAQ Script -->
     <script>
         $(document).ready(function() {

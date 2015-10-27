@@ -199,6 +199,7 @@ div.fBox h4 {
 		margin: 0 auto !important;
 	}
 }
+.cash,.check,.secure { text-align: left; }
 .cash {
 	padding: 10px 0;
 	padding-left: 60px;
@@ -218,6 +219,16 @@ div.fBox h4 {
 	.cash,.check,.secure {
 		font-size: calc(var(--fontSize) /0.7);
 	}
+}
+
+#accordion h3 {
+	color: var(--greenColor);
+	cursor: pointer;
+	outline: 0;
+}
+.slide {
+	height: auto !important;
+	padding: 20px;
 }
 
 /* BUTTON STYLES */
@@ -367,6 +378,9 @@ input.field {
 }
 .xSmall {
 	font-size: calc(var(--fontSize) /1.3);
+}
+.xxSmall {
+	font-size: calc(var(--fontSize) /1.5);
 }
 
 .quote {

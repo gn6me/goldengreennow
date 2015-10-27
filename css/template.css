@@ -468,6 +468,7 @@ div.fBox h4 {
 		margin: 0 auto !important;
 	}
 }
+.cash,.check,.secure { text-align: left; }
 .cash {
 	padding: 10px 0;
 	padding-left: 60px;
@@ -487,6 +488,16 @@ div.fBox h4 {
 	.cash,.check,.secure {
 		font-size: 1.42857rem;
 	}
+}
+
+#accordion h3 {
+	color: #389D52;
+	cursor: pointer;
+	outline: 0;
+}
+.slide {
+	height: auto !important;
+	padding: 20px;
 }
 
 /* BUTTON STYLES */
@@ -653,6 +664,10 @@ input.field {
 .xSmall {
 	font-size: 12px;
 	font-size: 0.76923rem;
+}
+.xxSmall {
+	font-size: 10px;
+	font-size: 0.66667rem;
 }
 
 .quote {

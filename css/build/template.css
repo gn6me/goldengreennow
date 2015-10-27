@@ -1,3 +1,4 @@
+/* Main Template Styles */
 :root {
 	--mainColor: #fff;
 	--mainBorder: color(var(--mainColor) b(+30%));
@@ -14,6 +15,7 @@
 @custom-selector :--heading h1, h2, h3, h4, h5, h6;
 
 /* LOST GRID STYLES */
+/* This section may need cleaning up. Lots of hacks and workarounds */
 section {
 	lost-utility: clearfix;
 }
@@ -86,6 +88,7 @@ div.sixth {
 		lost-column: 1/1;
 	}
 }
+/* End cleanup section */
 
 /* MAIN CSS STYLES */
 
@@ -166,22 +169,19 @@ div.u-header h3 {
 
 div.fBox {
 	text-align: center;
-	background: url('../images/photobackground.jpg') no-repeat;
+	background: url('../images/photobackground.jpg') center no-repeat;
 	background-size: cover;
 }
 .mobile { display: none; }
 @media (--mobileReg) {
-	nav.menu { display: none; }
-	.mobile { display: block; }
-	div.fBox {
+	nav.menu { display: none; } /* Hide main nav menu on mobile */
+	.mobile { display: block; } /* Display mobile menu button */
+	div.fBox { /* Hide background image on mobile */
 		background: color(var(--greenColor) saturation(+ 60%) w(+ 40%));
 		background-image: none;
 	}
 }
-div.fBox .cAlign {
-	/*top: 50px;*/
-	margin: 40px 0 20px;
-}
+
 div.fBox h3 {
 	color: color(var(--greenColor) b(65%));
 }
@@ -350,13 +350,14 @@ input.field {
 
 .upper {
 	text-transform: uppercase;
-	text-align:left;
+	text-align: left;
 }
 .left 	{ text-align: left; }
 .center { text-align: center; }
 .pullCenter { margin: 0 auto; }
 .pullRight { float: right; }
 
+/* Used to align the secure text box in the middle */
 .secureAlign {
 	max-width: 395px;
 	margin: 0 auto;
@@ -382,5 +383,3 @@ ul.green {
 .bg-grey {
 	background-color: color(var(--mainColor) b(5%));
 }
-
-.ui-loader { display: none; }

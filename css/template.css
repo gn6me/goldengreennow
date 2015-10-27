@@ -1,4 +1,7 @@
+/* Main Template Styles */
+
 /* LOST GRID STYLES */
+/* This section may need cleaning up. Lots of hacks and workarounds */
 section {
 	*zoom: 1;
 }
@@ -351,6 +354,7 @@ div.sixth:nth-child(0n + 1) {
 		clear: left;
 	}
 }
+/* End cleanup section */
 
 /* MAIN CSS STYLES */
 
@@ -434,22 +438,19 @@ div.u-header h3 {
 
 div.fBox {
 	text-align: center;
-	background: url('../images/photobackground.jpg') no-repeat;
+	background: url('../images/photobackground.jpg') center no-repeat;
 	background-size: cover;
 }
 .mobile { display: none; }
 @media (max-width: 800px) {
-	nav.menu { display: none; }
-	.mobile { display: block; }
-	div.fBox {
+	nav.menu { display: none; } /* Hide main nav menu on mobile */
+	.mobile { display: block; } /* Display mobile menu button */
+	div.fBox { /* Hide background image on mobile */
 		background: rgb(102, 214, 130);
 		background-image: none;
 	}
 }
-div.fBox .cAlign {
-	/*top: 50px;*/
-	margin: 40px 0 20px;
-}
+
 div.fBox h3 {
 	color: rgb(56, 89, 64);
 }
@@ -633,13 +634,14 @@ input.field {
 
 .upper {
 	text-transform: uppercase;
-	text-align:left;
+	text-align: left;
 }
 .left 	{ text-align: left; }
 .center { text-align: center; }
 .pullCenter { margin: 0 auto; }
 .pullRight { float: right; }
 
+/* Used to align the secure text box in the middle */
 .secureAlign {
 	max-width: 395px;
 	margin: 0 auto;
@@ -667,5 +669,3 @@ ul.green {
 .bg-grey {
 	background-color: rgb(243, 243, 243);
 }
-
-.ui-loader { display: none; }

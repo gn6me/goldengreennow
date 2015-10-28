@@ -172,8 +172,28 @@ div.fBox {
 	background: url('../images/photobackground.jpg') center no-repeat;
 	background-size: cover;
 }
-.mobile { display: none; }
+.mobile,.sideMenu { display: none; }
+.sideMenu .bar {
+	width: 30px;
+	height: 5px;
+	display: block;
+	border-radius: 7px;
+	background: color(var(--mainColor) saturation(- 80%) b(+ 100%));
+	margin: 5px 0;
+}
 @media (--mobileReg) {
+	.sideMenu {
+		width: 32px;
+		height: 33px;
+		padding: 5px;
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		/*background: var(--mainColor);*/
+		
+	}
 	nav.menu { display: none; } /* Hide main nav menu on mobile */
 	.mobile { display: block; } /* Display mobile menu button */
 	div.fBox { /* Hide background image on mobile */
@@ -350,6 +370,10 @@ h7 {
 	font-weight: bold;
 }
 
+li {
+	margin-top: 20px;
+}
+
 blockquote {
 	margin-left: 80px;
 }
@@ -396,6 +420,9 @@ input.field {
 
 .upper {
 	text-transform: uppercase;
+}
+.underline {
+	text-decoration: underline;
 }
 .left 	{ text-align: left; }
 .center { text-align: center; }

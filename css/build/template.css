@@ -14,6 +14,10 @@
 @custom-media --mobileSmall (width <= 500px);
 @custom-selector :--heading h1, h2, h3, h4, h5, h6, h7;
 
+body {
+	background: var(--mainColor) !important;
+}
+
 /* LOST GRID STYLES */
 /* This section may need cleaning up. Lots of hacks and workarounds */
 section {

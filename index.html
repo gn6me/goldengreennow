@@ -197,7 +197,6 @@
         </section>
         <section class="row bg-grey">
             <div class="col1">
-                <div id="qa" style="display:block !important;">&nbsp;</div>
                 <div id="answer1" style="display:none;">
                     <h5>What Are the Requirements for Approval?</h5>
                     <p>No documents are mandatory for approval, however the requirements for your loan may vary. Typically you will be requested to provide documentation regarding:</p>
@@ -246,6 +245,7 @@
                     <h5>In Which States Are You Authorized to Provide a Loan?</h5>
                     <p>Missouri, New Mexico, Texas, and Wisconsin. Although through a network of other lenders, you may be referred to another lender in another state if you are not a resident of any of the above.</p>
                 </div>
+                <div id="qa" style="display:block !important;">&nbsp;</div>
             </div>
         </section>
         <section class="row">
@@ -345,9 +345,15 @@
                     scrollTop: $("#hiw").offset().top},
                     'slow');
             });
+            var link = $("#qa");
+            var section = $(".bg-grey");
+            var offset = link.offset();
+            var top = offset.top;
+            var bottom = $(window).height() - section.height();
+            bottom = top - bottom;
             $(".quest").click(function() {
                 $('html,body').animate({
-                    scrollTop: $("#qa").offset().top},
+                    scrollTop: bottom},
                     'slow');
             });
         });

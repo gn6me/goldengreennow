@@ -178,20 +178,20 @@
             </div>
             <div class="half">
                 <ul>
-                    <li><a href="#1" class="question1">What Are the Requirements for Approval?</a></li>
-                    <li><a href="#2" class="question2">What if I Have Poor Credit?</a></li>
-                    <li><a href="#3" class="question3">What Documents Do You Need From Me?</a></li>
-                    <li><a href="#4" class="question4">When Will I Hear From You?</a></li>
-                    <li><a href="#5" class="question5">How Soon Can I Recieve My Loan?</a></li>
+                    <li class="quest"><a href="#1" class="question1">What Are the Requirements for Approval?</a></li>
+                    <li class="quest"><a href="#2" class="question2">What if I Have Poor Credit?</a></li>
+                    <li class="quest"><a href="#3" class="question3">What Documents Do You Need From Me?</a></li>
+                    <li class="quest"><a href="#4" class="question4">When Will I Hear From You?</a></li>
+                    <li class="quest"><a href="#5" class="question5">How Soon Can I Recieve My Loan?</a></li>
                 </ul>
             </div>
             <div class="half">
                 <p>More questions can be found here</p>
                 <ul>
-                    <li><a href="#6" class="question6">Why Are Installment Loans Better and More Flexible?</a></li>
-                    <li><a href="#7" class="question7">How Do I Recieve the Loan, and How Do I Repay the Loan?</a></li>
-                    <li><a href="#8" class="question8">How Is My Due Date Determined?</a></li>
-                    <li><a href="#9" class="question9">In Which States Are You Authorized to Provide a Loan?</a></li>
+                    <li class="quest"><a href="#6" class="question6">Why Are Installment Loans Better and More Flexible?</a></li>
+                    <li class="quest"><a href="#7" class="question7">How Do I Recieve the Loan, and How Do I Repay the Loan?</a></li>
+                    <li class="quest"><a href="#8" class="question8">How Is My Due Date Determined?</a></li>
+                    <li class="quest"><a href="#9" class="question9">In Which States Are You Authorized to Provide a Loan?</a></li>
                 </ul>
             </div>
         </section>
@@ -343,8 +343,13 @@
                 $('html,body').animate({
                     scrollTop: $("#hiw").offset().top},
                     'slow');
-                });
             });
+            $(".quest").click(function() {
+                $('html,body').animate({
+                    scrollTop: $("#faq").offset().top},
+                    'slow');
+            });
+        });
     </script>
     <!-- Mobile Menu -->
     <script type="text/javascript">

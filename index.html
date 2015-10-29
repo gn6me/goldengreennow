@@ -195,7 +195,7 @@
                 </ul>
             </div>
         </section>
-        <section class="row bg-grey">
+        <section class="row bg-grey scroll">
             <div class="col1">
                 <div id="answer1" style="display:none;">
                     <h5>What Are the Requirements for Approval?</h5>
@@ -345,15 +345,9 @@
                     scrollTop: $("#hiw").offset().top},
                     'slow');
             });
-            var link = $("#qa");
-            var section = $(".bg-grey");
-            var offset = link.offset();
-            var top = offset.top;
-            var bottom = $(window).height() - section.height();
-            bottom = top - bottom;
             $(".quest").click(function() {
                 $('html,body').animate({
-                    scrollTop: bottom},
+                    scrollTop: $("#qa").offset().top -300},
                     'slow');
             });
         });

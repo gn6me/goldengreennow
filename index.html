@@ -197,7 +197,7 @@
         </section>
         <section id="scroll" class="row bg-grey">
             <div class="col1">
-                <div id="height"></div>
+                <div id="qa" style="display:block !important;">&nbsp;</div>
                 <div id="answer1" style="display:none;">
                     <h5 id="1">What Are the Requirements for Approval?</h5>
                     <p>No documents are mandatory for approval, however the requirements for your loan may vary. Typically you will be requested to provide documentation regarding:</p>
@@ -246,7 +246,6 @@
                     <h5>In Which States Are You Authorized to Provide a Loan?</h5>
                     <p>Missouri, New Mexico, Texas, and Wisconsin. Although through a network of other lenders, you may be referred to another lender in another state if you are not a resident of any of the above.</p>
                 </div>
-                <div id="qa" style="display:block !important;">&nbsp;</div>
             </div>
         </section>
         <section class="row">
@@ -334,17 +333,15 @@
                 var numb = this.className.replace('question', '');
                 $('[id^="answer"]').hide();
                 $('#answer' + numb).show();
-                var offset = $("#qa").offset().top; //2446
-                var fHeight = $("#faqSec").height();
-                var sHeight = $("#scroll").height(); //max is 347
-                var height = sHeight + fHeight;
-                var ultHeight = offset - height;
+                var offset = $("#qa").offset().top;
+                var sHeight = $("#scroll").height();
+                var fHeight = sHeight + sHeight;
+                var ultHeight = offset - fHeight;
                 $(".quest").click(function() {
                     $('html,body').animate({
-                        scrollTop: ultHeight},
+                        scrollTop: offset - 100},
                         'slow');
                 });
-                $("#height").text(ultHeight);
             });
             // v- Smooth scroll effect -v
             $(".arrow").click(function() {

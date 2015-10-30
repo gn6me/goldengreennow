@@ -172,7 +172,7 @@
                 <p>Cash loans are cash advances designed to meet your emergency financial needs. Cash loans are also perfect for those times when you need a little extra cash for unexpected bills or special occasions. First, complete your loan application. Then your application will need to be approved. You will typically be contacted by a customer service representative to review your application. Once you are approved, you will receive funds into your account typically the next business day. After you receive your funds, you can log on, monitor and manage your account at any time.</p>
             </div>
         </section>
-        <section class="row">
+        <section id="faqSec" class="row">
             <div id="faq" class="col1">
                 <h4 class="green">Frequently Asked Questions</h4>
             </div>
@@ -195,10 +195,11 @@
                 </ul>
             </div>
         </section>
-        <section class="row bg-grey scroll">
+        <section id="scroll" class="row bg-grey">
             <div class="col1">
+                <div id="height"></div>
                 <div id="answer1" style="display:none;">
-                    <h5>What Are the Requirements for Approval?</h5>
+                    <h5 id="1">What Are the Requirements for Approval?</h5>
                     <p>No documents are mandatory for approval, however the requirements for your loan may vary. Typically you will be requested to provide documentation regarding:</p>
                     <ul>
                         <li>Checking or Savings account with Direct Deposit</li>
@@ -333,6 +334,17 @@
                 var numb = this.className.replace('question', '');
                 $('[id^="answer"]').hide();
                 $('#answer' + numb).show();
+                var offset = $("#qa").offset().top; //2446
+                var fHeight = $("#faqSec").height();
+                var sHeight = $("#scroll").height(); //max is 347
+                var height = sHeight + fHeight;
+                var ultHeight = offset - height;
+                $(".quest").click(function() {
+                    $('html,body').animate({
+                        scrollTop: ultHeight},
+                        'slow');
+                });
+                $("#height").text(ultHeight);
             });
             // v- Smooth scroll effect -v
             $(".arrow").click(function() {
@@ -345,11 +357,15 @@
                     scrollTop: $("#hiw").offset().top},
                     'slow');
             });
-            $(".quest").click(function() {
+            /*$(function() {
+                $("#height").text($(window).height());
+                $("#height").text($("#scroll").height());
+            });*/
+            /*$(".quest").click(function() {
                 $('html,body').animate({
                     scrollTop: $("#qa").offset().top -365},
                     'slow');
-            });
+            });*/
         });
     </script>
     <!-- Mobile Menu -->
